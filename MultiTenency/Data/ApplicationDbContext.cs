@@ -9,6 +9,7 @@ namespace MultiTenency.Data
     {
         public string TenantId { get; set; }
         private readonly ITenantServices _tenantServices;
+
         public ApplicationDbContext(DbContextOptions options, ITenantServices tenantServices) : base(options)
         {
             _tenantServices = tenantServices;

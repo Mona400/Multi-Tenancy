@@ -4,8 +4,8 @@ namespace MultiTenency.Services
 {
     public interface ITenantServices
     {
-        public string? GetConnectionString();
-        public Tenants? GetCurrentTenant();
-        public string? GetDatabaseProvider();
+        string? GetConnectionString();
+        Tenants? GetCurrentTenant();
+        string? GetDatabaseProvider();
     }
 }
